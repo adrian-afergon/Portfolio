@@ -1,4 +1,4 @@
-var SMALL ='40px';
+var SMALL ='60px';//40
 var BIG = '100px';
 var MINWITH = 480;
 var ANIMATION_TIME = 600;
@@ -10,9 +10,7 @@ var SMALL_RESPONSIVE ='60px';
 	se ajuste el menú (o, cambias el tamaño para que trate la tablet tambien como el movil y no lo
 	rediimensione)
 
-
-	Controlar que cuando estás en movil no es necesario cambiar el tamaño, sino dejar el que tiene por
-	defeto de 60px
+	Revisar interación porque cuando se minimiza, no se redimenciona al tamaño grande
 */
 
 
@@ -43,16 +41,14 @@ $(document).ready(function(){
 		}
 	});
 	$(window).on('resize', function(){
+		console.log("Se redimenciona");
       	if ($(window).width() >= MINWITH){
 			resizeHeader();
 		}
       	else{
-      		//
-      			//No me gusta, posible refactorización
-      		//
-      		$('header').data('size','big');
+      		$('header').data('size','small');
 					$('header').stop().animate({
-					    height:BIG
+					    height:SMALL_RESPONSIVE
 					},ANIMATION_TIME);
       	}
 	});

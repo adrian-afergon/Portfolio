@@ -2,7 +2,23 @@
 	Think in use this color:
 	#00b9be;
 */
+@media (max-width: 480px) {
+	header{
+		height:60px;
+	}
+	#menu{
+		float:left;
+	}
+}
 
+@media (min-width:481px){
+	header{
+		height:100px;
+	}
+	#menu{
+		float: right;
+	}
+}
 
 header , footer{
 	padding: 5px;	
@@ -18,7 +34,6 @@ header{
 	width:100%;
 	-webkit-box-shadow: 0 2px 10px .5px #828282;
 	box-shadow: 0 2px 10px .5px #828282;
-	height:100px;
 	background-color: #FFF;
 }
 
@@ -31,17 +46,26 @@ li{
 #content{
 	background-color: #00b9be;
 }
-#logo{
-	float:left;
-}
-
-#menu{
-	float:right;
-}
 
 #content{
 	height:760px;
 }
+
+
+#menu a{
+	color:#00b9be;
+	-moz-transition: all .3s ease-in;
+    /* WebKit */
+    -webkit-transition: all .3s ease-in;
+    /* Opera */
+    -o-transition: all .3s ease-in;
+    /* Standard */
+    transition: all .3s ease-in;
+}
+#menu a:hover{
+	color:#09d6db;
+}
+
 
 .navbar-default{
 	background-color:white;
