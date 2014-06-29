@@ -1,7 +1,6 @@
 var TIME_TRANSITION = 1000;
 
 $(document).ready(function(){
-
 	$(document).on('click','a.smooth', function(e){
 		e.preventDefault();
 		var $link = $(this);

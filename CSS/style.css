@@ -9,6 +9,10 @@
 	#menu{
 		float:left;
 	}
+
+	#socialities{
+		display:none;
+	}
 }
 
 @media (min-width:481px){
@@ -18,12 +22,20 @@
 	#menu{
 		float: right;
 	}
+	#socialities{
+		margin-right: 10px;
+	}
+}
+
+@media (min-width: 768px){
+	#socialities{
+		margin-right: 25px;
+	}
 }
 
 header , footer{
 	padding: 5px;	
 }
-
 
 header{
 	/**
@@ -35,6 +47,7 @@ header{
 	-webkit-box-shadow: 0 2px 10px .5px #828282;
 	box-shadow: 0 2px 10px .5px #828282;
 	background-color: #FFF;
+	z-index: 99999;
 }
 
 li{
@@ -43,15 +56,18 @@ li{
 	width:auto;
 	margin:0 5px;
 }
-#content{
+
+
+.content{
+	height:640px;
 	background-color: #00b9be;
 }
-
-#content{
-	height:760px;
+/*El carrusel*/
+/*
+.content:first-child{
+	padding-top: 100px;
 }
-
-
+*/
 #menu a{
 	color:#00b9be;
 	-moz-transition: all .3s ease-in;
@@ -66,7 +82,6 @@ li{
 	color:#09d6db;
 }
 
-
 .navbar-default{
 	background-color:white;
 }
@@ -75,6 +90,33 @@ li{
 	padding-top: 0px;
 	padding-left: 0px;
 }
+
+#socialities{
+	float:right;
+}
+
+.twitter{
+	color:#55acee;
+}
+.twitter:hover{
+	color:#3197e5;
+}
+.google{
+	color:#d53e34;
+}
+.google:hover{
+	color:#ec655a;
+}
+.github{
+	color:#515151;
+}
+.linkedin{
+	color:#1b86bd;
+}
+.linkedin:hover{
+	color: #066ba0;
+}
+
 
 /*
 Verificar si dejas la sombra superior en el footer o no

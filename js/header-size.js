@@ -5,15 +5,6 @@ var ANIMATION_TIME = 600;
 
 var SMALL_RESPONSIVE ='60px';
 
-/**
-	Es necesario ajustar el tamaño del header en el css de tal forma que en el tamaño para tablet
-	se ajuste el menú (o, cambias el tamaño para que trate la tablet tambien como el movil y no lo
-	rediimensione)
-
-	Revisar interación porque cuando se minimiza, no se redimenciona al tamaño grande
-*/
-
-
 function resizeHeader(){
 	if($(window).scrollTop() > 0){
 		if($('header').data('size') == 'big'){
@@ -21,6 +12,7 @@ function resizeHeader(){
 			$('header').stop().animate({
 				height:SMALL
 			},ANIMATION_TIME);
+			$('#socialities').toggle();
 		}
 	}
 	else{
@@ -29,6 +21,7 @@ function resizeHeader(){
 			$('header').stop().animate({
 				height:BIG
 			},ANIMATION_TIME);
+			$('#socialities').toggle();
 		}  
 	}
 }
@@ -41,7 +34,6 @@ $(document).ready(function(){
 		}
 	});
 	$(window).on('resize', function(){
-		console.log("Se redimenciona");
       	if ($(window).width() >= MINWITH){
 			resizeHeader();
 		}
@@ -50,6 +42,10 @@ $(document).ready(function(){
 					$('header').stop().animate({
 					    height:SMALL_RESPONSIVE
 					},ANIMATION_TIME);
+					$('#socialities').hide();
       	}
 	});
 });
+
+
+/*Cuando se abre el menu deplegable para tablet, se sacan los iconos de redes sociales del header*/
