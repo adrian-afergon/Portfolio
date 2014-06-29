@@ -15,7 +15,7 @@ var SMALL_RESPONSIVE ='60px';
 
 
 function resizeHeader(){
-	if($(document).scrollTop() > 0){
+	if($(window).scrollTop() > 0){
 		if($('header').data('size') == 'big'){
 			$('header').data('size','small');
 			$('header').stop().animate({
