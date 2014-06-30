@@ -67,9 +67,19 @@ li{
 }
 
 
+
+#aboutMe{
+	height: 360px;
+}
 .content{
-	height:640px;
+	height:620px;
 	background-color: #00b9be;
+	padding:60px 10px;
+	color:white;
+}
+
+.content:nth-child(2n+1){
+	background-color: #09d6db;
 }
 /*El carrusel*/
 /*
@@ -86,6 +96,15 @@ li{
 }
 #menu a:hover{
 	color:#09d6db;
+}
+
+#info p{
+	text-align: center;
+}
+
+#aboutMe p{
+	padding-left: 20px;
+	text-align: center;
 }
 
 .navbar-default{
