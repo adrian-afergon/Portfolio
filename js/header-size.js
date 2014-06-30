@@ -46,6 +46,3 @@ $(document).ready(function(){
       	}
 	});
 });
-
-
-/*Cuando se abre el menu deplegable para tablet, se sacan los iconos de redes sociales del header*/

@@ -23,13 +23,22 @@
 		float: right;
 	}
 	#socialities{
-		margin-right: 10px;
+		padding-right: 10px;
+		display: block;
+		background-color: white;
+		max-height: 40px;
+		-webkit-border-radius: 0 0 5px 5px;
+		border-radius: 0 0 5px 5px;
 	}
 }
 
 @media (min-width: 768px){
 	#socialities{
+		padding-right: 5px;
 		margin-right: 25px;
+		display:inherit;
+		background-color:transparent;
+
 	}
 }
 
@@ -71,11 +80,8 @@ li{
 #menu a{
 	color:#00b9be;
 	-moz-transition: all .3s ease-in;
-    /* WebKit */
     -webkit-transition: all .3s ease-in;
-    /* Opera */
     -o-transition: all .3s ease-in;
-    /* Standard */
     transition: all .3s ease-in;
 }
 #menu a:hover{
@@ -92,7 +98,7 @@ li{
 }
 
 #socialities{
-	float:right;
+	float: right;
 }
 
 .twitter{
