@@ -26,7 +26,7 @@ function resizeHeader(){
 	}
 }
 
-$(document).ready(function(){
+$(window).ready(function(){
 	$('header').data('size','big');
 	$(window).scroll(function(){
 		if ($(window).width() >= MINWITH){

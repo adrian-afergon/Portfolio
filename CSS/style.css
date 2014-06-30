@@ -82,11 +82,11 @@ li{
 	background-color: #09d6db;
 }
 /*El carrusel*/
-/*
+
 .content:first-child{
 	padding-top: 100px;
 }
-*/
+
 #menu a{
 	color:#00b9be;
 	-moz-transition: all .3s ease-in;
@@ -99,6 +99,7 @@ li{
 }
 
 #info p{
+	clear: both;
 	text-align: center;
 }
 
