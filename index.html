@@ -14,8 +14,6 @@
 	<body>
 		<header>
 			<nav class="navbar-default" role="navigation">
-			  <!-- El logotipo y el icono que despliega el menú se agrupan
-			       para mostrarlos mejor en los dispositivos móviles -->
 				<div class="navbar-header">
 				    <button type="button" class="navbar-toggle" data-toggle="collapse"
 				            data-target=".navbar-ex2-collapse">
@@ -25,7 +23,7 @@
 				      	<span class="icon-bar"></span>
 				    </button>
 				    <!-- Crear svg-->
-				    <a class="navbar-brand" href="#"><img id="logo" src="img/a.png"></img></a>
+				    <a class="navbar-brand" href="#"><img id="logo" src="img/a.png"/></a>
 				</div>
 
 				<div class="collapse navbar-collapse navbar-ex2-collapse">
@@ -91,7 +89,8 @@
 
 		<!--controlar alto cuando sea responsivo-->
 		<div class="content col-md-12" id="portfolio" ng-controller="portfolioController as portfolio">
-			<div class="project col-md-4" ng-repeat="work in portfolio.works | orderBy:'-lastUpdate'">
+			<div class="project col-md-3" ng-repeat="work in portfolio.works | orderBy:'-lastUpdate'">
+				<img src={{work.image}} alt="not load" class="img-circle"/>
 				<h3><a href={{work.url}}>{{work.name}}</a></h3>
 				<p>{{work.description}}</p>
 				<p>{{work.tecnologies}}</p>

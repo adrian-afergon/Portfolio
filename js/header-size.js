@@ -5,6 +5,9 @@ var ANIMATION_TIME = 600;
 
 var SMALL_RESPONSIVE ='60px';
 
+
+/*Posibles refactorizaciones*/
+
 function resizeHeader(){
 	if($(window).scrollTop() > 0){
 		if($('header').data('size') == 'big'){
@@ -38,29 +41,6 @@ function resizeHeader(){
 		}  
 	}
 }
-
-/*
-function resizeHeader(){
-	if($(window).scrollTop() > 0){
-		if($('header').data('size') == 'big'){
-			$('header').data('size','small');
-			$('header').stop().animate({
-				height:SMALL
-			},ANIMATION_TIME);
-			$('#logo').toggle();
-		}
-	}
-	else{
-		if($('header').data('size') == 'small'){
-			$('header').data('size','big');
-			$('header').stop().animate({
-				height:BIG
-			},ANIMATION_TIME);
-			$('#logo').toggle();
-		}  
-	}
-}
-*/
 
 $(window).ready(function(){
 	$('header').data('size','big');
