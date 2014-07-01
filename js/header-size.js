@@ -12,6 +12,13 @@ function resizeHeader(){
 			$('header').stop().animate({
 				height:SMALL
 			},ANIMATION_TIME);
+
+			$('#logo').data('size','small');
+			$('#logo').stop().animate({
+				height:'40px'
+			},ANIMATION_TIME);
+
+
 			$('#socialities').toggle();
 		}
 	}
@@ -21,10 +28,39 @@ function resizeHeader(){
 			$('header').stop().animate({
 				height:BIG
 			},ANIMATION_TIME);
+
+			$('#logo').data('size','big');
+			$('#logo').stop().animate({
+				height:'60px'
+			},ANIMATION_TIME);
+
 			$('#socialities').toggle();
 		}  
 	}
 }
+
+/*
+function resizeHeader(){
+	if($(window).scrollTop() > 0){
+		if($('header').data('size') == 'big'){
+			$('header').data('size','small');
+			$('header').stop().animate({
+				height:SMALL
+			},ANIMATION_TIME);
+			$('#logo').toggle();
+		}
+	}
+	else{
+		if($('header').data('size') == 'small'){
+			$('header').data('size','big');
+			$('header').stop().animate({
+				height:BIG
+			},ANIMATION_TIME);
+			$('#logo').toggle();
+		}  
+	}
+}
+*/
 
 $(window).ready(function(){
 	$('header').data('size','big');
@@ -42,6 +78,12 @@ $(window).ready(function(){
 					$('header').stop().animate({
 					    height:SMALL_RESPONSIVE
 					},ANIMATION_TIME);
+
+					$('#logo').stop().animate({
+					    height:'40px'
+					},ANIMATION_TIME);
+
+
 					$('#socialities').hide();
       	}
 	});
