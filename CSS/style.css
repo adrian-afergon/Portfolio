@@ -169,6 +169,22 @@ h3 a:hover{
 	border-radius: 10px;
 }
 
+.project img{
+	height: 100px;
+	width: 100px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.project .selected{
+	width: 120px;
+	height: 120px;
+	margin-top: -7px;
+	margin-bottom: -13px;
+}
+
 .twitter{
 	color:#55acee;
 }
@@ -202,11 +218,21 @@ footer{
 */
 
 
-/*Solo es una prueba*/
-
-
-
-.project img{
-	height: 100px;
-	width: 100px;
+#buttonTop {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
 }
+
+#buttonTop a{
+	color:#272727;
+	-moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+#buttonTop a:hover{
+	color:#333333;
+};

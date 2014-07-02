@@ -21,9 +21,11 @@ function resizeHeader(){
 				height:'40px'
 			},ANIMATION_TIME);
 
+			//$('#buttonTop').toggle();
 
 			$('#socialities').toggle();
 		}
+
 	}
 	else{
 		if($('header').data('size') == 'small'){
@@ -36,6 +38,8 @@ function resizeHeader(){
 			$('#logo').stop().animate({
 				height:'60px'
 			},ANIMATION_TIME);
+
+			//$('#buttonTop').toggle();
 
 			$('#socialities').toggle();
 		}  
@@ -63,6 +67,7 @@ $(window).ready(function(){
 					    height:'40px'
 					},ANIMATION_TIME);
 
+					$('#buttonTop').show();
 
 					$('#socialities').hide();
       	}

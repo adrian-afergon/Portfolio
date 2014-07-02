@@ -44,50 +44,7 @@
 				</div>
 			</nav>
 		</header>
-		<!--
-		<div class="content" >
 
-			<div id="carousel-example-generic" class="carousel slide content" data-ride="carousel">
-			  	<ol class="carousel-indicators">
-			    	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    	<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    	<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			  	</ol>
-
-			  	<div class="carousel-inner">
-			    	<div class="item active">
-			      		<img src="IMG/adriandni.png" alt="">
-			      		<div class="carousel-caption">
-			        		<h3>AAAAAAAAAAAAAA</h3>
-			        		<p>a</p>
-			      		</div>
-			    	</div>
-			    	<div class="item">
-			      		<img src="" alt="">
-			      		<div class="carousel-caption">
-			        		<h3>AAAAAAA</h3>
-			        		<p>a</p>
-			      		</div>
-			    	</div>
-			    	<div class="item">
-			      		<img src="" alt="">
-			      		<div class="carousel-caption">
-			        		<h3>AAAAAAAAAAA</h3>
-			        		<p>a</p>
-			      		</div>
-			    	</div>
-			  	</div>
-
-			  	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			    	<span class="glyphicon glyphicon-chevron-left"></span>
-			  	</a>
-			  	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			    	<span class="glyphicon glyphicon-chevron-right"></span>
-			  	</a>
-			</div>
-		</div>-->
-
-		<!--controlar alto cuando sea responsivo-->
 		<div class="content col-md-12" id="portfolio" ng-controller="portfolioController as portfolio">
 			<div class="project col-md-3" ng-repeat="work in portfolio.works | orderBy:'-lastUpdate'">
 				<img src={{work.image}} alt="not load" class="img-circle"/>
@@ -136,9 +93,13 @@
 				<p>Last Updated: 30/06/2014.</p>
 			</div>
 		</footer>
+		<div id="buttonTop">
+			<a class="smooth" href="#portfolio"><i class="fa fa-arrow-circle-up fa-3x"></i></a>
+		</div>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/img-resizer.js"></script>
 	</body>
 
 </html>
