@@ -13,24 +13,24 @@
 	/*Formato de la fecha MM/dd/yyyy*/
 	var projects=[
 		{
-			name:'Sistema de Facturacion',
-			description:'Sistema de facturación realizado para facilitar la elaboración de facturas',
+			name:'Billing system - class project',
+			description:'Billing system made ​​to facilitate the processing of invoices',
 			tecnologies:'ASP.NET + SQL',
 			lastUpdate:new Date('12/19/2013'),
 			image:routeImg+'sistemafacturacion.png',
 			url:'https://github.com/adrian-afergon/Ending-Project-ASP.NET--Billing-system',
 		},
 		{
-			name:'Centro de Salud',
-			description:'Proyecto basado en Open Data, para la solicitud de donaciones de sangre',
+			name:'health center - class project',
+			description:'Based on Open Data Project, request for blood donations',
 			tecnologies:'PHP + CodeIgniter + JavaScript + MySQL',
 			lastUpdate:new Date('01/09/2014'),
 			image:routeImg+'donacioncordoba.png',
 			url:'http://fionexpert.net46.net/PHP_CI_JSON_Project/index.php/home',
 		},
 		{
-			name:'Turism plataform',
-			description:'Plataforma para realizar reserva de actividades turísticas diseñada para móviles',
+			name:'Turism plataform - class project',
+			description:'Platform for booking of tourist activities designed for mobile',
 			tecnologies:'Java (jsp) + MySQL + JPA + Web Service',
 			lastUpdate:new Date('02/28/2014'),
 			image:routeImg+'turismojava.png',
