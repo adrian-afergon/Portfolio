@@ -109,7 +109,20 @@ h3 a:hover{
 	text-align: center;
 }
 
-#info p{
+#aboutMe a{
+	color:white;
+	text-decoration: underline;
+}
+#aboutMe a:hover{
+	color:black;
+	text-decoration: underline;
+}
+
+.info{
+	padding-left: 10px;
+}
+
+#infoUpdate p{
 	clear: both;
 	text-align: center;
 }
@@ -206,6 +219,9 @@ h3 a:hover{
 .linkedin:hover{
 	color: #066ba0;
 }
+
+
+
 
 
 /*

@@ -47,7 +47,7 @@
 
 		<div class="content col-md-12" id="portfolio" ng-controller="portfolioController as portfolio">
 			<div class="project col-md-3" ng-repeat="work in portfolio.works | orderBy:'-lastUpdate'">
-				<img src={{work.image}} alt="not load" class="img-circle"/>
+				<img ng-src={{work.image}} alt="not load" class="img-circle"/>
 				<h3><a href={{work.url}}>{{work.name}}</a></h3>
 				<p>{{work.description}}</p>
 				<p>{{work.tecnologies}}</p>
@@ -71,26 +71,32 @@
 			<!--add icons for socialnetwotk -->
 			<div id="contact" class="col-sm-4">
 				<h3>Contact:</h3>
-				Mail:<br/>
-				<a href="mailto:adrian.afergon@gmail.com">adrian.afergon@gmail.com</a><br/>
-				Twitter:<br/>
-				<a href="https://twitter.com/AdrianFerrera91">@AdrianFerrera91</a><br/>
-				Linkedin:<br/>
-				<a href="https://es.linkedin.com/pub/adrián-ferrera-gonzález/55/b57/347/">Adrián Ferrera</a><br/>
-				GitHub:<br/>
-				<a href="https://github.com/adrian-afergon">adrian-afergon</a><br/>
+				<div class="info">
+					<i class="fa fa-envelope"></i> Mail:<br/>
+					<a href="mailto:adrian.afergon@gmail.com">adrian.afergon@gmail.com</a><br/>
+					<i class="fa fa-twitter"></i> Twitter:<br/>
+					<a href="https://twitter.com/AdrianFerrera91">@AdrianFerrera91</a><br/>
+					<i class="fa fa-linkedin"></i> Linkedin:<br/>
+					<a href="https://es.linkedin.com/pub/adrián-ferrera-gonzález/55/b57/347/">Adrián Ferrera</a><br/>
+					<i class="fa fa-github"></i> GitHub:<br/>
+					<a href="https://github.com/adrian-afergon">adrian-afergon</a><br/>
+				</div>
 			</div>
 			<div id="aboutThis" class="col-sm-4">
 				<h3>Make with:</h3>
-				jQuery<br/>
-				BootStrap<br/>
-				Angujar.js<br/>
+				<div class="info">
+					<i class="fa fa-html5"></i> HTML5<br/>
+					<i class="fa fa-css3"></i> CSS3<br/>
+					Angujar.js<br/>
+					BootStrap<br/>
+					jQuery<br/>
+				</div>
 			</div>
 			<div class="col-sm-4">
-				<h3>Algo más</h3>
+				<h3>More updates comming<br/> soon!! ;)</h3>
 			</div>
-			<div id="info">
-				<p>Last Updated: 30/06/2014.</p>
+			<div id="infoUpdate">
+				<p>Last Updated: 03/Jul/2014.</p>
 			</div>
 		</footer>
 		<div id="buttonTop">

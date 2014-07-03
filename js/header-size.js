@@ -21,7 +21,7 @@ function resizeHeader(){
 				height:'40px'
 			},ANIMATION_TIME);
 
-			//$('#buttonTop').toggle();
+			$('#buttonTop').show('slow');
 
 			$('#socialities').toggle();
 		}
@@ -39,7 +39,7 @@ function resizeHeader(){
 				height:'60px'
 			},ANIMATION_TIME);
 
-			//$('#buttonTop').toggle();
+			$('#buttonTop').hide('slow');
 
 			$('#socialities').toggle();
 		}  
@@ -51,6 +51,9 @@ $(window).ready(function(){
 	$(window).scroll(function(){
 		if ($(window).width() >= MINWITH){
 			resizeHeader();
+		}
+		else{
+			$('#buttonTop').show('slow');
 		}
 	});
 	$(window).on('resize', function(){
@@ -67,7 +70,7 @@ $(window).ready(function(){
 					    height:'40px'
 					},ANIMATION_TIME);
 
-					$('#buttonTop').show();
+					$('#buttonTop').show('slow');
 
 					$('#socialities').hide();
       	}
