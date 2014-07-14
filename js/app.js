@@ -34,7 +34,7 @@
 			tecnologies:'Java (jsp) + MySQL + JPA + Web Service',
 			lastUpdate:new Date('02/28/2014'),
 			image:routeImg+'turismojava.png',
-			url:'https://github.com/adrian-afergon/Ending-Project---Java-Web---Tourism',
+			url:'https://github.com/adrian-afergon/Ending-Project-Java-Web-Tourism',
 		},
 		{
 			name:'Space Avenger',
